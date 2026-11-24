@@ -13,3 +13,9 @@ test("slugify collapses repeated separators and trims the ends", () => {
 test("slugify returns an empty string for text with no letters or digits", () => {
   assert.equal(slugify("!!!"), "");
 });
+
+test("slugify throws a TypeError for anything that isn't a string", () => {
+  assert.throws(() => slugify(null), TypeError);
+  assert.throws(() => slugify(42), TypeError);
+  assert.throws(() => slugify(undefined), TypeError);
+});
