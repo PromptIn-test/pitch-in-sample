@@ -7,11 +7,12 @@
 ## Usage
 
 ```js
-import { slugify, truncate, wordCount } from "./src/index.js";
+import { readingTime, slugify, truncate, wordCount } from "./src/index.js";
 
 slugify("Hello, World!");               // "hello-world"
 truncate("The quick brown fox", 12);    // "The quick b…"
 wordCount("  one two\nthree ");         // 3
+readingTime("word ".repeat(201));       // 2 (minutes, at 200 words a minute)
 ```
 
 ## Develop
