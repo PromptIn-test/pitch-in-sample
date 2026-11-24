@@ -24,3 +24,5 @@ npm test
 ```
 
 CI runs the same command on every push to `main` and on every pull request. See `PROJECT_BRIEF.md` for the project brief that coding agents read first.
+
+Direct push for the Pitch In unreviewed-merge alert check (sample data).
